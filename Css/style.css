@@ -1,0 +1,95 @@
+body{
+    /* font-family: "Pacifico", cursive; */
+    /* font-family: "Righteous", sans-serif; */
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+}
+::selection{
+    background-color: #FEC260;
+}
+.bookmark-title{
+    position: relative;
+}
+.doted-line{
+    border-bottom: 2px dotted black;
+}
+.bookmark-title h1{
+    color: #352E28;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Pacifico", cursive;
+}
+.bookmark-title h1::before{
+    content: "";
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    left: 40%;
+    bottom: 6px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 350ms;
+}
+.bookmark-title h1:hover::before{
+    height: 50%;
+}
+.bookmark-content h2{
+    font-family: "Righteous",sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right,#3ca55c,#b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+.form label{
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-control:focus{
+    border-color: #c74b29;
+    box-shadow: 0 0 0 0.2rem #fac46d;
+}
+.form-control{
+    line-height: 1.5;
+    color: #212529;
+}
+.btn-custom{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+.btn-visit{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+.btn-delete{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.box-circles .circle1{
+    background-color: #f15f5d;
+} 
+.box-circles .circle1 {
+    background-color: #febe2e;
+}
+
